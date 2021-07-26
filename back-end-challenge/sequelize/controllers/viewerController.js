@@ -1,5 +1,5 @@
 const express = require('express');
-const { Viewers } = require('../models');
+const { Viewers } = require('../database/models');
 const router = express.Router();
 
 // Adding a viewer into a movie

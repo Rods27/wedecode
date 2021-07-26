@@ -1,5 +1,6 @@
 const express = require('express');
-const { Movie, User } = require('../models');
+const { Movie, User } = require('../database/models');
+const { validateMovieRegister } = require('../middleware/validateSchema');
 const router = express.Router();
 
 // Getting all movies
@@ -34,7 +35,7 @@ router.get('/getall/viewers', (req, res) => {
 
 // Creating a movie
 
-router.post('/create', (req, res) => {
+router.post('/create', validateMovieRegister, (req, res) => {
   const { name, description, year } = req.body;
   Movie.create({ 
     name,

@@ -1,6 +1,7 @@
 const express = require('express');
-const { User, Movie } = require('../models');
+const { User, Movie } = require('../database/models');
 const router = express.Router();
+const { validateUserRegister } = require('../middleware/validateSchema');
 
 // Getting all viewers
 
@@ -36,7 +37,7 @@ router.get('/getall/movies', (_req, res) => {
 
 // Creating a viewer
 
-router.post('/create', (req, res) => {
+router.post('/create', validateUserRegister, (req, res) => {
   const { name, email, password } = req.body;
   User.create({ name, email, password })
   .then((user) => {
