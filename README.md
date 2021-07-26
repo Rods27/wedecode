@@ -1,5 +1,5 @@
 # wedecode challenge
-Um website para cadastro de hoteis de temporada
+Um banco de dados para cadastro de filmes e usuários.
 
 ## Indice
 * [Tecnologias](#tecnologias)
