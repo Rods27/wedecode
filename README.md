@@ -34,19 +34,19 @@ Caso queira fazer algum comando individual:
 
 Criar o Database
 ```
-"npm run db:create"
+"npm run create"
 ```
 Migrar as colunas para o database
 ```
-"npm run db:migrate"
+"npm run migrate"
 ```
 Popular o database
 ```
-"npm run db:seed"
+"npm run seed"
 ```
 Deletar o database
 ```
-"npm run db:drop"
+"npm run drop"
 ```
 
 
