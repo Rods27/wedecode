@@ -23,7 +23,7 @@ npm install
 ## Configuração
 
 #### Iniciando a aplicação
-- Vá na pasta client e digite ```npm start```, para iniciar a aplicação no browser, na porta 3001.
+- Vá na pasta sequelize/server e digite ```npm start``` em seu terminal, para iniciar a servidor, na porta 3001.
 
 #### Criando o Databse
 - Para criar e popular o database, pode usar o seguinte comando:
