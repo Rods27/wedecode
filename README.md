@@ -26,7 +26,7 @@ npm install
 - Vá na pasta client e digite ```npm start```, para iniciar a aplicação no browser, na porta 3001.
 
 #### Criando o Databse
-- Para criar e popular o databse, pode usar o seguinte comando:
+- Para criar e popular o database, pode usar o seguinte comando:
 ```
 "npm run db:reset"
 ```
