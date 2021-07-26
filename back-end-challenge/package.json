@@ -6,10 +6,10 @@
   "scripts": {
     "start": "nodemon sequelize/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "npx sequelize-cli db:create",
-    "migrate": "npx sequelize-cli db:migrate",
-    "drop": "npx sequelize-cli db:drop",
-    "seed": "npx sequelize-cli db:seed:all",
+    "db:create": "npx sequelize-cli db:create",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:drop": "npx sequelize-cli db:drop",
+    "db:seed": "npx sequelize-cli db:seed:all",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
