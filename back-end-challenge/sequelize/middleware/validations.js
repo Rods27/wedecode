@@ -28,7 +28,6 @@ const viewerExists = async (req, res, next) => {
       [Op.and]: [{ userId }, {movieId} ] } 
     }
   );
-  if(viewer === null) res.status(409).json({ message: 'This viewer or Movie does not exist.' });
   if (viewer && viewer.dataValues) {
     res.status(409).json({ message: 'This movie already have this viewer' });
   } else {
